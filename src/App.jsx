@@ -47,11 +47,11 @@ export default function AVNRWebsite() {
 
           <div className="relative">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur">
-              <div className="flex aspect-square flex-col items-center justify-center rounded-[5rem] border border-white/10 bg-neutral-900 text-center">
+              <div className="flex aspect-square flex-col items-center justify-center rounded-[1.5rem] border border-white/10 bg-neutral-900 text-center">
             <img 
     src="/logo.png" 
     alt="AVNR Logo" 
-    className="w-40 object-contain"
+   className="w-full h-full scale-[2.2] object-cover rounded-[1.5rem]"
                 />
   
               </div>
