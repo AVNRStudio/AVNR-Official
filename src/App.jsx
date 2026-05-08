@@ -13,7 +13,7 @@ export default function AVNRWebsite() {
             <a href="#contact" className="hover:text-white">Contact</a>
           </nav>
           <button className="rounded-full border border-white/15 p-3 hover:bg-white hover:text-black">
-            <span className="text-xl">⌑</span>
+            <span className="text-xl">🛒</span>
           </button>
         </div>
       </header>
