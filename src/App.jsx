@@ -18,7 +18,7 @@ export default function AVNRWebsite() {
         </div>
       </header>
 
-      <section id="home" className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24">
+     <section id="home" className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.14),_transparent_35%),linear-gradient(to_bottom,_rgba(0,0,0,0.2),_rgba(0,0,0,0.95))]" />
         <div className="absolute inset-0 opacity-20">
           <div className="h-full w-full bg-[linear-gradient(120deg,#111_0%,#333_40%,#000_100%)]" />
@@ -48,14 +48,12 @@ export default function AVNRWebsite() {
           <div className="relative">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur">
               <div className="flex aspect-square flex-col items-center justify-center rounded-[1.5rem] border border-white/10 bg-neutral-900 text-center">
-                <img 
-  src="/logo.png" 
-  alt="AVNR Logo" 
-  className="w-40 object-contain"
-/>
-                <h2 className="mt-8 text-7xl font-black tracking-tighter">AVNR</h2>
-                <p className="mt-4 tracking-[0.45em] text-neutral-300">BUILT FEARLESS</p>
-                <p className="mt-3 text-sm tracking-[0.4em] text-neutral-500">ADVENTURERS</p>
+            <img 
+    src="/logo.png" 
+    alt="AVNR Logo" 
+    className="w-40 object-contain"
+                />
+  
               </div>
             </div>
           </div>
