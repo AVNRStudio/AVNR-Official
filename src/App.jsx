@@ -1,3 +1,227 @@
+
+
+change "for people who are willing to take risks to move forward" to something that rhymes and sounds better dont be corny tho
+
+Generated image: avnr built fearless branding design
+
+
+Edit
+
+
+yeah thanks, and im also using this ai to generate my website. its pretty solid but does my progress save after i close the tab
+
+Uploaded image
+Uploaded image
+Uploaded image
+Uploaded image
+make me a website
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+where do i open
+
+Avnr Website Landing Page
+why is it like that
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+what do i do
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+what do i do
+
+
+this?
+
+
+
+
+Avnr Website Landing Page
+where do i go
+
+Avnr Website Landing Page
+i added this logo.png
+
+Avnr Website Landing Page
+i did
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+i dont see it
+
+Avnr Website Landing Page
+i dont see it in here
+
+Avnr Website Landing Page
+this is wha ti see
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+Avnr Website Landing Page
+
+
+
+
+
+Uploaded image
+no how do i make this logo.png
+
+Uploaded image
+
+Avnr Website Landing Page
+Uploaded image
+
+Avnr Website Landing Page
+Uploaded image
+how do i increase the size of the logo so it fits perfectly in the box
+
+Avnr Website Landing Page
+Uploaded image
+its still too big
+
+Now I can see why.
+
+Your image container is forcing the image into a square:
+
+className="flex aspect-square flex-col items-center justify-center"
+and your logo image itself is rectangular/tall.
+
+Replace THIS:
+
+<div className="flex aspect-square flex-col items-center justify-center rounded-[1.5rem] border border-white/10 bg-neutral-900 text-center">
+with THIS:
+
+<div className="h-[650px] overflow-hidden rounded-[1.5rem] border border-white/10 bg-neutral-900">
+Then replace your image class with:
+
+className="h-full w-full object-cover"
+So the final section becomes:
+
+<div className="h-[650px] overflow-hidden rounded-[1.5rem] border border-white/10 bg-neutral-900">
+  <img 
+    src="/logo.png" 
+    alt="AVNR Logo" 
+    className="h-full w-full object-cover"
+  />
+</div>
+That removes the square restriction and makes the logo properly fill the entire right-side box.
+
+
+Avnr Website Landing Page
+now how do i save and run it
+
+Your code is already saved in the canvas version.
+
+To run the updated website locally:
+
+Open CMD
+
+Go to your project:
+
+cd C:\Users\1jaho\avnr-site
+Start the website:
+
+npm run dev
+Open the link it gives you, usually:
+
+http://localhost:5173
+If you already have it running, just press:
+
+Ctrl + S
+inside App.jsx and the page updates automatically.
+
+
+Avnr Website Landing Page
+its stil the same
+
+Your canvas code changed, but your real website uses App.jsx, not canvas.
+
+Do this:
+
+Copy the full canvas code
+
+Open:
+
+C:\Users\1jaho\avnr-site\src\App.jsx
+Delete everything in App.jsx
+
+Paste the canvas code
+
+Save with Ctrl + S
+
+Refresh your local website
+
+Then to update the live Vercel site:
+
+git add .
+git commit -m "update logo layout"
+git push
+
+
+
+Avnr Website Landing Page
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
 import React from "react";
 
 export default function AVNRWebsite() {
@@ -34,133 +258,3 @@ export default function AVNRWebsite() {
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-neutral-300">
               AVNR is made for adventurers, risk-takers, and people who refuse to stay comfortable. Gear built for movement, ambition, and the road ahead.
-            </p>
-            <div className="mt-9 flex flex-wrap gap-4">
-              <a href="#shop" className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 font-bold text-black transition hover:scale-105">
-                Shop Now <span>→</span>
-              </a>
-              <a href="#story" className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-4 font-bold text-white hover:bg-white hover:text-black">
-                Our Story
-              </a>
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur">
-              <div className="flex aspect-square flex-col items-center justify-center rounded-[1.5rem] border border-white/10 bg-neutral-900 text-center">
-            <img 
-    src="/logo.png" 
-    alt="AVNR Logo" 
-    className="w-full h-full object-cover object-center rounded-[1.5rem]"
-                />
-  
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white px-6 py-24 text-black">
-        <div className="mx-auto max-w-7xl text-center">
-          <h2 className="text-4xl font-black md:text-5xl">Built for the bold</h2>
-          <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-neutral-600">
-            More than apparel. AVNR is a mindset for people who see obstacles as opportunities and comfort zones as starting points.
-          </p>
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
-            {[
-              { icon: "⚡", title: "Courage", text: "For those who step into the unknown and keep moving." },
-              { icon: "◆", title: "Durability", text: "Every piece is designed to match your ambition." },
-              { icon: "◎", title: "Community", text: "A tribe of people chasing progress, risk, and freedom." },
-            ].map((item) => (
-              <div key={item.title} className="rounded-3xl border border-neutral-200 p-8 text-left shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-                <div className="mb-8 flex h-14 w-14 items-center justify-center rounded-2xl bg-neutral-100">
-                  <span className="text-2xl">{item.icon}</span>
-                </div>
-                <h3 className="text-2xl font-black">{item.title}</h3>
-                <p className="mt-4 leading-7 text-neutral-600">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="shop" className="px-6 py-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
-            <div>
-              <p className="font-bold uppercase tracking-[0.4em] text-neutral-500">First drop</p>
-              <h2 className="mt-3 text-4xl font-black md:text-5xl">The fearless collection</h2>
-            </div>
-            <button className="w-fit rounded-full border border-white/20 px-6 py-3 font-bold hover:bg-white hover:text-black">View All</button>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {[
-              ["AVNR Compass Tee", "$35"],
-              ["Built Fearless Hoodie", "$70"],
-              ["Adventurers Cap", "$28"],
-            ].map(([name, price]) => (
-              <div key={name} className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5">
-                <div className="flex aspect-[4/5] items-center justify-center bg-neutral-900 transition group-hover:scale-105">
-                  <span className="text-7xl text-neutral-500">▲</span>
-                </div>
-                <div className="flex items-center justify-between p-6">
-                  <div>
-                    <h3 className="font-black">{name}</h3>
-                    <p className="mt-1 text-neutral-400">{price}</p>
-                  </div>
-                  <button className="rounded-full bg-white px-4 py-2 text-sm font-bold text-black">Add</button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="story" className="bg-neutral-900 px-6 py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
-          <div>
-            <h2 className="text-4xl font-black md:text-5xl">The AVNR story</h2>
-            <p className="mt-6 text-lg leading-8 text-neutral-300">
-              We started with one belief: the best gear is made for people who move. Not just physically, but mentally. People who take risks, embrace change, and refuse to settle.
-            </p>
-            <p className="mt-5 text-lg leading-8 text-neutral-300">
-              Every piece is created with intention — functional, bold, and built fearless.
-            </p>
-          </div>
-          <div className="rounded-[2rem] border border-white/10 bg-neutral-950 p-8">
-            <h3 className="text-6xl font-black">AVNR</h3>
-            <p className="mt-5 text-xl font-bold text-neutral-300">FORWARD THROUGH FEAR.</p>
-            <p className="mt-4 leading-7 text-neutral-400">Adventure-inspired streetwear made for the ones who keep going.</p>
-          </div>
-        </div>
-      </section>
-
-      <footer id="contact" className="px-6 py-14">
-        <div className="mx-auto grid max-w-7xl gap-10 border-t border-white/10 pt-10 md:grid-cols-3">
-          <div>
-            <h2 className="text-3xl font-black">AVNR</h2>
-            <p className="mt-4 max-w-xs text-neutral-400">Built fearless for adventurers willing to move forward.</p>
-          </div>
-          <div>
-            <h3 className="font-black uppercase tracking-widest">Quick Links</h3>
-            <div className="mt-4 grid gap-2 text-neutral-400">
-              <a href="#home">Home</a>
-              <a href="#shop">Shop</a>
-              <a href="#story">Story</a>
-              <a href="#contact">Contact</a>
-            </div>
-          </div>
-          <div>
-            <h3 className="font-black uppercase tracking-widest">Connect</h3>
-            <div className="mt-4 flex gap-4 text-neutral-400">
-              <span className="text-2xl">◎</span>
-              <span className="text-2xl">◆</span>
-            </div>
-            <p className="mt-4 text-neutral-400">Email: hello@avnr.com</p>
-          </div>
-        </div>
-        <p className="mx-auto mt-10 max-w-7xl text-sm text-neutral-500">© 2026 AVNR. All rights reserved.</p>
-      </footer>
-    </div>
-  );
-}
