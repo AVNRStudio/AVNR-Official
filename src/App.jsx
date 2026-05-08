@@ -51,7 +51,7 @@ export default function AVNRWebsite() {
             <img 
     src="/logo.png" 
     alt="AVNR Logo" 
-   className="w-full h-full scale-[2.2] object-cover rounded-[1.5rem]"
+    className="w-full h-full object-cover object-center rounded-[1.5rem]"
                 />
   
               </div>
