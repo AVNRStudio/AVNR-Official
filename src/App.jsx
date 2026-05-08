@@ -48,7 +48,11 @@ export default function AVNRWebsite() {
           <div className="relative">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur">
               <div className="flex aspect-square flex-col items-center justify-center rounded-[1.5rem] border border-white/10 bg-neutral-900 text-center">
-                <div className="text-8xl">▲</div>
+                <img 
+  src="/logo.png" 
+  alt="AVNR Logo" 
+  className="w-40 object-contain"
+/>
                 <h2 className="mt-8 text-7xl font-black tracking-tighter">AVNR</h2>
                 <p className="mt-4 tracking-[0.45em] text-neutral-300">BUILT FEARLESS</p>
                 <p className="mt-3 text-sm tracking-[0.4em] text-neutral-500">ADVENTURERS</p>
